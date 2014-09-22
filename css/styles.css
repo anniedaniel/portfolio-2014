@@ -1,0 +1,40 @@
+@font-face{
+	font-family: basic;
+	src: url(fonts/basic.ttf);
+}
+
+h1, li{
+	font-family: basic;
+}
+
+ul, menu{
+	padding: inherit;
+}
+
+ul.portfolio-nav{
+	text-align: center;
+}
+
+li:first-child{
+	border-left: none;
+}
+
+li{
+	list-style-type: none;
+	font-size: 1.5em;
+	border-left: 1px solid #555;
+	cursor: pointer;
+}
+
+.header{
+	text-align: center;
+}
+
+.text{
+	font-family: 'Crimson Text', serif;
+}
+
+.nav-item{
+	display: inline-block;
+	padding: 5px 10px;
+}
