@@ -38,3 +38,43 @@ li{
 	display: inline-block;
 	padding: 5px 10px;
 }
+
+.about-expand,
+.clips-expand,
+.resume-expand{
+	display: none;
+}
+
+#clips-list{
+	margin: 5px 40px;
+}
+
+.clip-item{
+	margin: 20px 0px;
+}
+
+p.clip-title,
+p.clip-organization,
+p.clip-summary{
+	margin: 0px;
+}
+
+p.clip-title{
+	font-size: 1.2em;
+}
+
+p.clip-summary{
+	margin-top: 10px;
+}
+
+.about-extend{
+	text-align: center;
+}
+
+.resume-img{
+	width: 100%;
+}
+
+.active{
+	display: block;
+}

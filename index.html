@@ -22,20 +22,33 @@
     	<li class="nav-item about">About</li>
     </ul>
 
-    <div class="clips-expand">
+    <div class="clips-expand detail">
+    	<div id="clips-list" class="text"></div>
     </div>
 
-    <div class="resume-expand">
+    <div class="resume-expand detail">
+    	<img class="resume-img" src="img/danielResume.png">
     </div>
 
-    <div class="about-expand">
+    <div class="about-expand detail">
     	<p class="text"><i class="fa fa-twitter"></i> anieldaniel</p>
     	<p class="text"><i class="fa fa-github"></i> anniedaniel</p>
     	<p class="text"><i class="fa fa-envelope"></i> anniedaniel001@gmail.com</p>
     </div>
+
+    <script class="template-clips">
+        <div class="clip-item">
+        	<p class="clip-title"><strong><%= clip.title %></strong></p>
+            <p class="clip-organization"><%= clip.organization %></p>
+            <p class="clip-summary"><%= clip.summary %></p>
+        </div>
+    </script>
+
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <script src="js/portfolio.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+    <script type="text/javascript" src="js/tabletop.js"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
   </body>
 </html>
