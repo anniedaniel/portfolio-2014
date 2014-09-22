@@ -13,7 +13,7 @@
   
   <body>
   	<div class="header">
-    	<h1>Hi, my name is Annie Daniel.</h1> 
+    	<h1>Hi, my name is <span class="name pink">Annie Daniel.</span></h1> 
     	<h4 class="text">I make things on the Internet.</h4>
     </div>
     <ul class="portfolio-nav">
@@ -27,21 +27,24 @@
     </div>
 
     <div class="resume-expand detail">
-    	<img class="resume-img" src="img/danielResume.png">
+    	<a href="img/danielResume.pdf" target="_blank"><img class="resume-img" src="img/danielResume.png"></a>
     </div>
 
     <div class="about-expand detail">
-    	<p class="text"><i class="fa fa-twitter"></i> anieldaniel</p>
-    	<p class="text"><i class="fa fa-github"></i> anniedaniel</p>
-    	<p class="text"><i class="fa fa-envelope"></i> anniedaniel001@gmail.com</p>
+    	<a class="about-url" href="https://twitter.com/anieldaniel" target="_blank"><p class="text"><i class="fa fa-twitter"></i> anieldaniel</p></a>
+    	<a class="about-url" href="http://www.github.com/anniedaniel" target="_blank"><p class="text"><i class="fa fa-github"></i> anniedaniel</p></a>
+    	<p class="text"><a class="about-url" href="mailto:anniedaniel001@gmail.com?Subject=Hi%20Annie!" target="_top"><i class="fa fa-envelope"></i> anniedaniel001@gmail.com</a></p>
     </div>
 
     <script class="template-clips">
+    <% if(clip.display != 'n'){%>
         <div class="clip-item">
-        	<p class="clip-title"><strong><%= clip.title %></strong></p>
+        	<a class="clip-url" href="<%= clip.url %>" target="_blank"><p class="clip-title"><strong><%= clip.title %></strong></p></a>
             <p class="clip-organization"><%= clip.organization %></p>
             <p class="clip-summary"><%= clip.summary %></p>
+            <hr />
         </div>
+    <% } %>
     </script>
 
     <!-- jQuery  -->

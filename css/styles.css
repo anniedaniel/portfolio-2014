@@ -30,6 +30,10 @@ li{
 	text-align: center;
 }
 
+.pink{
+	color: #FF638C;
+}
+
 .text{
 	font-family: 'Crimson Text', serif;
 }
@@ -37,6 +41,10 @@ li{
 .nav-item{
 	display: inline-block;
 	padding: 5px 10px;
+}
+
+.nav-item:hover{
+	color: #FF638C;
 }
 
 .about-expand,
@@ -50,7 +58,8 @@ li{
 }
 
 .clip-item{
-	margin: 20px 0px;
+	margin: 0px auto;
+	width: 80%;
 }
 
 p.clip-title,
@@ -61,14 +70,38 @@ p.clip-summary{
 
 p.clip-title{
 	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+a.clip-url{
+	text-decoration: none;
+	color: #000;
+}
+
+a.clip-url:hover{
+	color: #FF638C;
+}
+
+p.clip-organization{
+	font-family: basic;
 }
 
 p.clip-summary{
-	margin-top: 10px;
+	margin: 15px 0px 20px 0px;
 }
 
-.about-extend{
-	text-align: center;
+.about-expand{
+	width: 30%;
+	margin: 0px auto;
+}
+
+a.about-url{
+	text-decoration: none;
+	color: #000;
+}
+
+a.about-url:hover{
+	color: #FF638C;
 }
 
 .resume-img{
@@ -77,4 +110,22 @@ p.clip-summary{
 
 .active{
 	display: block;
+}
+
+@media (max-width: 300px) {
+	.nav-item{
+		display: block;
+		padding: 5px 10px;
+	}
+
+	li{
+		border-left: none;
+	}
+}
+
+@media (max-width: 700px) {
+	.about-expand{
+		width: 80%;
+		margin: 0px auto;
+	}
 }
